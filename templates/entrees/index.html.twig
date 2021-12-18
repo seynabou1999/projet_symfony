@@ -1,0 +1,153 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MainController!{% endblock %}
+{% block stylesheets %}
+<link rel="stylesheet" href="{{asset('/css/slid.css')}}" type=""/>
+{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+{% for message in app.flashes('success') %}
+        <div class="alert alert-success" role="alert">{{ message }}</div>
+    {% endfor %}
+    <div id="slider">
+        <figure>
+          <img src="/css/crevette.jpg">
+          <img src="/css/pomme-de-terre.jpg">
+          <img src="/css/entrees.jpg">
+          <img src="/css/entrees5.jpg">
+          <img src="/css/spag.jpg">
+        </figure>
+      </div>
+
+  <br>
+  <div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card bg-light mb-3">
+          <img src="/css/plat.jpg" alt="image de l'appartement" style="height:200px; width: 100%; display: block">
+          <div class="card-body">
+            <h4 class="card-title">Poisson aux Tomates</h4>
+            <p class="card-text" style="color: black;">
+              Un plat leger et delicieux
+              <br>
+              prix: 1500fcfa
+            </p>
+        </div>
+      </div> 
+    </div>
+    <div class="col-md-4">
+      <div class="card bg-light mb-3">
+          <img src="/css/pomme-de-terre.jpg" alt="image de l'appartement" style="height:200px; width: 100%; display: block">
+          <div class="card-body">
+            <h4 class="card-title">Cornes Boeuf </h4>
+            <p class="card-text" style="color: black;">
+             Sale et savoureux
+             <br>
+             prix: 2000cfa
+            </p>
+        </div>
+      </div> 
+    </div>
+    <div class="col-md-4">
+      <div class="card bg-light mb-3">
+          <img src="/css/salade.jpg" alt="image de l'appartement" style="height:200px; width: 100%; display: block">
+          <div class="card-body">
+            <h4 class="card-title">Salades, Viande et crudité</h4>
+            <p class="card-text" style="color: black;">
+              Plein de vitamines
+              <br>
+              prix: 3000fcfa
+            </p>
+        </div>
+      </div> 
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card bg-light mb-3">
+          <img src="/css/crevette.jpg" alt="image de l'appartement" style="height:200px; width: 100%; display: block">
+          <div class="card-body">
+            <h4 class="card-title">Salades et Crevettes</h4>
+            <p class="card-text" style="color: black;">
+              Delicieux et savoureux
+              <br>
+              prix: 1500fcfa
+            </p>
+        </div>
+      </div> 
+    </div>
+    <div class="col-md-4">
+      <div class="card bg-light mb-3">
+          <img src="/css/entrees.jpg" alt="image de l'appartement" style="height:200px; width: 100%; display: block">
+          <div class="card-body">
+            <h4 class="card-title">Viandes sautes</h4>
+            <p class="card-text" style="color: black;">
+              Fais a base de viande et d'oeufs
+              <br>
+              prix: 4000fcfa
+            </p>
+        </div>
+      </div> 
+    </div>
+    <div class="col-md-4">
+      <div class="card bg-light mb-3">
+          <img src="/css/pizza.png" alt="image de l'appartement" style="height:200px; width: 100%; display: block">
+          <div class="card-body">
+            <h4 class="card-title">Pizza</h4>
+            <p class="card-text" style="color: black;">
+              Reine, margarite....
+              <br>
+              prix: 3500fcfa
+            </p>
+        </div>
+      </div> 
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card bg-light mb-3">
+          <img src="/css/omelette-piquante.jpeg" alt="image de l'appartement" style="height:200px; width: 100%; display: block">
+          <div class="card-body">
+            <h4 class="card-title">Omelettes</h4>
+            <p class="card-text" style="color: black;">
+              Avec des crudites
+              <br>
+              prix: 2500fcfa
+            </p>
+        </div>
+      </div> 
+    </div>
+    <div class="col-md-4">
+      <div class="card bg-light mb-3">
+          <img src="/css/yap.jfif" alt="image de l'appartement" style="height:200px; width: 100%; display: block">
+          <div class="card-body">
+            <h4 class="card-title">Poulets brochettes</h4>
+            <p class="card-text" style="color: black;">
+              Poulet griés avec une saveur exceptionnelle
+              <br>
+              prix: 6000fcfa
+            </p>
+        </div>
+      </div> 
+    </div>
+    <div class="col-md-4">
+      <div class="card bg-light mb-3">
+          <img src="/css/spag.jpg" alt="image de l'appartement" style="height:200px; width: 100%; display: block">
+          <div class="card-body">
+            <h4 class="card-title">Spagetti</h4>
+            <p class="card-text" style="color: black;">
+              Spagetti a la viande
+              <br>
+              prix: 2000fcfa
+            </p>
+        </div>
+      </div> 
+    </div>
+  </div>
+  </div>
+{% endblock %}

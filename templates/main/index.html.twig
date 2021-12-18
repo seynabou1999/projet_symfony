@@ -1,0 +1,281 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MainController!{% endblock %}
+
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+{% for message in app.flashes('success') %}
+        <div class="alert alert-success" role="alert">{{ message }}</div>
+    {% endfor %}
+
+<div >
+<img src="/css/log4.png" alt="" width=200px height=100px/>
+<h1 style="float:right;margin-top:20px;">Bienvenue chez le meilleur restaurant du Sénégal !!! ✅</h1>
+</div>
+<div>
+    <div>
+      <img src="/css/soupe-5ffef8a19096f932593553.jpg" title="" width=1265px height=200px/>
+    </div>
+    <div style="position:absolute;top:150px; width:600px; height:300px; z-index:2;font-size:400%;color:white">
+      <center><b>TDSI FOOD...</b></center>
+    </div> 
+</div>
+  <br>
+  <div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card bg-light mb-3">
+          <img src="/css/entrees.jpg" alt="image de l'appartement" style="height:200px; width: 100%; display: block">
+          <div class="card-body">
+            <h4 class="card-title">Entrees</h4>
+            <p class="card-text" style="color: black;">
+              Au gré des saisons, le Chef 
+               propose: Assietes gourmandes
+               et Grandes Salades: crumble
+               Marseillais, Soupe de poissons de
+               Roches, Foie Gras de Canard
+            </p>
+        </div>
+      </div> 
+    </div>
+    <div class="col-md-4">
+      <div class="card bg-light mb-3">
+          <img src="/css/resistance.png" alt="image de l'appartement" style="height:200px; width: 100%; display: block">
+          <div class="card-body">
+            <h4 class="card-title">Plats</h4>
+            <p class="card-text" style="color: black;">
+              Coté Viande; deuis 7 ans le Chef
+              garantie, un partenariat avec 
+              Michel Mandine, Boucher depuis 3
+              générations et exclusivement de 
+              la viande Francaise
+            </p>
+        </div>
+      </div> 
+    </div>
+    <div class="col-md-4">
+      <div class="card bg-light mb-3">
+          <img src="/css/dessert.jpg" alt="image de l'appartement" style="height:200px; width: 100%; display: block">
+          <div class="card-body">
+            <h4 class="card-title">Desserts</h4>
+            <p class="card-text" style="color: black;">
+              Pour le dessert; le Chef prpose:
+              Du Jus de Fruit, de la boisson Gazeuse
+              Des gateaux au Chocolat ou à la Fraise
+              Et des Glaces pour 
+              Differents parfums
+            </p>
+        </div>
+      </div> 
+    </div>
+  </div>
+  </div>
+ 
+  <footer id="dk-footer" class="dk-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-4">
+                <div class="dk-footer-box-info">
+                    <a href="index.html" class="footer-logo">
+                        <img src="https://cdn.pixabay.com/photo/2016/11/07/13/04/yoga-1805784_960_720.png" alt="footer_logo" class="img-fluid">
+                    </a>
+                    <p class="footer-info-text">
+                      Nous vous proposos des plats de presque toutes les spécialités.
+                      <br>Gouter à nos saveurs, vous allez vous régaler avec nos délices.
+                    </p>
+                    <div class="footer-social-link">
+                        <h3>Suivez nous</h3>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Social link -->
+                </div>
+                <!-- End Footer info -->
+                <div class="footer-awarad">
+                    <img src="images/icon/best.png" alt="">
+                    <p>Best Design Company 2019</p>
+                </div>
+            </div>
+            <!-- End Col -->
+            <div class="col-md-12 col-lg-8">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="contact-us">
+                            <div class="contact-icon">
+                                <i class="fa fa-map-o" aria-hidden="true"></i>
+                            </div>
+                            <!-- End contact Icon -->
+                            <div class="contact-info">
+                                <h3>Tdsi food </h3>
+                                <p>Fann - Sénégal, Dakar, Senegal</p>
+                            </div>
+                            <!-- End Contact Info -->
+                        </div>
+                        <!-- End Contact Us -->
+                    </div>
+                    <!-- End Col -->
+                    <div class="col-md-6">
+                        <div class="contact-us contact-us-last">
+                            <div class="contact-icon">
+                                <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                            </div>
+                            <!-- End contact Icon -->
+                            <div class="contact-info">
+                                <h3>77 316 38 52</h3>
+                                <h3>77 360 84 06</h3>
+                                <p>Appelez-nous</p>
+                            </div>
+                            <!-- End Contact Info -->
+                        </div>
+                        <!-- End Contact Us -->
+                    </div>
+                    <!-- End Col -->
+                </div>
+                <!-- End Contact Row -->
+                <div class="row">
+                    <div class="col-md-12 col-lg-6">
+                        <div class="footer-widget footer-left-widget">
+                            <div class="section-heading">
+                                <h3>Useful Links</h3>
+                                <span class="animate-border border-black"></span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#"> À propos de nous</a>
+                                </li>
+                                <li>
+                                    <a href="#">Services</a>
+                                </li>
+                                <li>
+                                    <a href="#">Projects</a>
+                                </li>
+                                <li>
+                                    <a href="#">Notre équipe</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="#">Contact us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">Témoignages</a>
+                                </li>
+                                <li>
+                                    <a href="#">Faq</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Footer Widget -->
+                    </div>
+                    <!-- End col -->
+                    <div class="col-md-12 col-lg-6">
+                        <div class="footer-widget">
+                            <div class="section-heading">
+                                <h3>S'abonner</h3>
+                                <span class="animate-border border-black"></span>
+                            </div>
+                            <p><!-- Don’t miss to subscribe to our new feeds, kindly fill the form below. -->
+                              Vous etes amateurs de la bonne cuisine? Et vous voulez vous régaler?
+                              <a href="#" role="button">Voir nos plats</a>
+                            </p>
+                              
+                              <form action="#">
+                                <div class="form-row">
+                                    <div class="col dk-footer-form">
+                                        <input type="email" class="form-control" placeholder="Email Address">
+                                        <button type="submit">
+                                            <i class="fa fa-send"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                            <!-- End form -->
+                        </div>
+                        <!-- End footer widget -->
+                    </div>
+                    <!-- End Col -->
+                </div>
+                <!-- End Row -->
+            </div>
+            <!-- End Col -->
+        </div>
+        <!-- End Widget Row -->
+    </div>
+    <!-- End Contact Container -->
+
+
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <span>Copyright © 2021, All Right Reserved Seobin</span>
+                </div>
+                <!-- End Col -->
+                <div class="col-md-6">
+                    <div class="copyright-menu">
+                        <ul>
+                            <li>
+                                <a href="#">Accueil</a>
+                            </li>
+                            <li>
+                                <a href="#">Termes</a>
+                            </li>
+                            <li>
+                                <a href="#">Politique de confidentialité</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End col -->
+            </div>
+            <!-- End Row -->
+        </div>
+        <!-- End Copyright Container -->
+    </div>
+    <!-- End Copyright -->
+    <!-- Back to top -->
+    <div id="back-to-top" class="back-to-top">
+        <button class="btn btn-dark" title="Back to Top" style="display: block;">
+            <i class="fa fa-angle-up"></i>
+        </button>
+    </div>
+    <!-- End Back to top -->
+</footer>
+
+{% endblock %}

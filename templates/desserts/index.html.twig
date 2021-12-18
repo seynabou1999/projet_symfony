@@ -1,0 +1,153 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MainController!{% endblock %}
+{% block body %}
+{% block stylesheets %}
+<link rel="stylesheet" href="{{asset('/css/slid.css')}}" type=""/>
+{% endblock %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+{% for message in app.flashes('success') %}
+        <div class="alert alert-success" role="alert">{{ message }}</div>
+    {% endfor %}
+    <div id="slider">
+        <figure>
+          <img src="/css/dess1.jpg">
+          <img src="/css/dess2.jpg">
+          <img src="/css/dessert2.jpg">
+          <img src="/css/dessert3.jpg">
+          <img src="/css/dessert4.jpg">
+        </figure>
+      </div>
+
+  <br>
+  <div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card bg-light mb-3">
+          <img src="/css/boisson1.jpg" alt="image de l'appartement" style="height:200px; width: 100%; display: block">
+          <div class="card-body">
+            <h4 class="card-title">Jus d'orage</h4>
+            <p class="card-text" style="color: black;">
+              succulant
+              <br>
+              prix: 1000fcfa
+            </p>
+        </div>
+      </div> 
+    </div>
+    <div class="col-md-4">
+      <div class="card bg-light mb-3">
+          <img src="/css/dessert2.jpg" alt="image de l'appartement" style="height:200px; width: 100%; display: block">
+          <div class="card-body">
+            <h4 class="card-title">Gateau fraise</h4>
+            <p class="card-text" style="color: black;">
+              Pour vos anniversaires
+              <br>
+              prix: 10000fcfa
+            </p>
+        </div>
+      </div> 
+    </div>
+    <div class="col-md-4">
+      <div class="card bg-light mb-3">
+          <img src="/css/boisson3.jpg" alt="image de l'appartement" style="height:200px; width: 100%; display: block">
+          <div class="card-body">
+            <h4 class="card-title">Chocolat chaud</h4>
+            <p class="card-text" style="color: black;">
+              Delicieux et savoureux
+              <br>
+              prix: 500fcfa
+            </p>
+        </div>
+      </div> 
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card bg-light mb-3">
+          <img src="/css/boisson-banner.jpg" alt="image de l'appartement" style="height:200px; width: 100%; display: block">
+          <div class="card-body">
+            <h4 class="card-title">Jus naturel</h4>
+            <p class="card-text" style="color: black;">
+              un vrai delice
+              <br>
+              prix: 8000fcfa
+            </p>
+        </div>
+      </div> 
+    </div>
+    <div class="col-md-4">
+      <div class="card bg-light mb-3">
+          <img src="/css/jus.jpg" alt="image de l'appartement" style="height:200px; width: 100%; display: block">
+          <div class="card-body">
+            <h4 class="card-title">Divers jus</h4>
+            <p class="card-text" style="color: black;">
+              plusieurs parfums
+              <br>
+              prix: 1500fcfa
+            </p>
+        </div>
+      </div> 
+    </div>
+    <div class="col-md-4">
+      <div class="card bg-light mb-3">
+          <img src="/css/boisson2.jpg" alt="image de l'appartement" style="height:200px; width: 100%; display: block">
+          <div class="card-body">
+            <h4 class="card-title">Jus de fruits</h4>
+            <p class="card-text" style="color: black;">
+              Naturel...
+              <br>
+              prix: 2000fcfa
+            </p>
+        </div>
+      </div> 
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card bg-light mb-3">
+          <img src="/css/jus.jpeg" alt="image de l'appartement" style="height:200px; width: 100%; display: block">
+          <div class="card-body">
+            <h4 class="card-title">Jus vert</h4>
+            <p class="card-text" style="color: black;">
+              Savoureux...
+              <br>
+              prix: 1000fcfa
+            </p>
+        </div>
+      </div> 
+    </div>
+    <div class="col-md-4">
+      <div class="card bg-light mb-3">
+          <img src="/css/dessert.jpg" alt="image de l'appartement" style="height:200px; width: 100%; display: block">
+          <div class="card-body">
+            <h4 class="card-title">Desserts</h4>
+            <p class="card-text" style="color: black;">
+             Jus avec des fruits
+              <br>
+              prix: 1500fcfa
+            </p>
+        </div>
+      </div> 
+    </div>
+    <div class="col-md-4">
+      <div class="card bg-light mb-3">
+          <img src="/css/jus1.jpeg" alt="image de l'appartement" style="height:200px; width: 100%; display: block">
+          <div class="card-body">
+            <h4 class="card-title">Jus limon</h4>
+            <p class="card-text" style="color: black;">
+              Vitaminé...
+              <br>
+              prix: 2000fcfa
+            </p>
+        </div>
+      </div> 
+    </div>
+  </div>
+  </div>
+  
+{% endblock %}

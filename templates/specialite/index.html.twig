@@ -1,0 +1,198 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello SpecialiteController!{% endblock %}
+{% block stylesheets %}
+
+<link rel="stylesheet" href="{{asset('/css/specialite.css')}}" type=""/>
+<!-- CSS only -->
+{% endblock %}
+{% block head%}
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Kenia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Martel:wght@700&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+
+        <!-- balise pour le haut de page -->
+
+        <div id="sticky-header" class="section-menu" style="margin-top: 150px;margin-bottom: -150px;">
+            <!-- menu de navigation -->
+            <nav class="menu">
+                <ul>
+                    <li class="nav-item1 pizza"><a href="#pizza">Thiebou Dieune</a></li>
+                    <li class="nav-item1 salade"><a href="#salade">Athieke Poisson</a></li>
+                    <li class="nav-item1 burger"><a href="#burger">Salade Chinoise</a></li>
+                    <li class="nav-item1 boisson"><a href="#boisson">Boissons</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p style="color:black;">
+        Notre restaurant vous offre ce que l’Afrique a de meilleur à déguster ! 
+        Un voyage culinaire où vos papilles créent de jolis souvenirs gustatifs ! 
+        Chaque pays africain possède ses spécialités liées à sa localisation. 
+        Avec une proximité de l’océan Atlantique, le Sénégal possède une cuisine
+         riche de plats à base de poissons. On le trouve ainsi cuisiné de différentes façons :
+          poêlé, braisé, fumé, séché … Ce qui permet à la cuisine sénégalaise des plats variés
+           et gourmands. Nous vous proposons une petite sélection avec les 10 meilleurs plats sénégalais.
+        </p>
+        <main id="main">
+            <!-- section pizza -->
+            <section id="pizza" class="pizza">
+
+                <div class="item">
+                    <img src="/css/rizrouge.jpg">
+                    <div class="item-infos">
+                        <h3>Riz au poisson</h3>
+                        <hr>
+                        <p style="color: black;">Ragoût de poisson et de légumes en sauce tomate, 
+                            servi avec du riz créole, qui constitue le plat national sénégalais.</p>
+                        <p class="prix" style="color: black;">2500 fcfa</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="/css/rizblanc.jpg">
+                    <div class="item-infos">
+                        <h3>Riz au poisson</h3>
+                        <hr>
+                        <p style="color: black;">Il faut absolument goûter le ceebu jen, le plat national à base de riz, 
+                            de poisson et de légumes variés. Vous pouvez essayer aussi le ceebu wer (riz blanc), 
+                            une variante du ceebu jen où le riz est cuit sans adjonction de concentré de tomates,
+                             servi avec un peu de nététou, 
+                            de sauce de feuille de bissap ou de tamarin.</p>
+                        <p class="prix" style="color: black;">2500 fcfa</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="/css/rizpoulet.jpg">
+                    <div class="item-infos">
+                        <h3>Riz au poulet</h3>
+                        <hr>
+                        <p style="color: black;">Chèvre, courgettes, basilique, carottes, huile vegetale</p>
+                        <p class="prix" style="color: black;">3000 fcfa</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- section pizza -->
+            <section id="salade" class="salade">
+
+                <div class="item">
+                    <img src="/css/athiekepoulet.jpg">
+                    <div class="item-infos">
+                        <h3>Attieke + Poulet Braisé + Aloco </h3>
+                        <hr>
+                        <p style="color: black;">Poulet, mache, betterave, avocat, croutons</p>
+                        <p class="prix" style="color: black;">3500 fcfa</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="/css/athiekepoisson.jpg">
+                    <div class="item-infos">
+                        <h3>Attieke + Poisson Braisé + Aloco</h3>
+                        <hr>
+                        <p style="color: black;">Salade, tomates, olives, feta, oignons basilique</p>
+                        <p class="prix" style="color: black;">3500 fcfa</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="/css/athiekecrev.jpg">
+                    <div class="item-infos">
+                        <h3>Attieke + Crevette</h3>
+                        <hr>
+                        <p style="color: black;">Tomates, mozarella, salade, maches, epinard</p>
+                        <p class="prix" style="color: black;">4000 fcfa</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- section burger -->
+            <section id="burger" class="burger">
+
+                <div class="item">
+                    <img src="/css/poissonpan.jpg">
+                    <div class="item-infos">
+                        <h3>Poisson Pané</h3>
+                        <hr>
+                        <p style="color: black;">1 steak + bacon + chedar</p>
+                        <p class="prix" style="color: black;">9000 fca</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="/css/firir.jpg">
+                    <div class="item-infos">
+                        <h3>firire poisson</h3>
+                        <hr>
+                        <p style="color: black;">1 steak + chedar + salade + oignons</p>
+                        <p class="prix" style="color: black;">7000 cfa</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="/css/salpoulet.jpg">
+                    <div class="item-infos">
+                        <h3>Poulet + salade</h3>
+                        <hr>
+                        <p style="color: black;">2 steaks + chedar</p>
+                        <p class="prix" style="color: black;">7500 fcfa</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- section boisson -->
+            <section id="boisson" class="boisson">
+
+                <div class="item">
+                    <img src="/css/boisson1.jpg">
+                    <div class="item-infos">
+                        <h3>Jus multifruits</h3>
+                        <hr>
+                        <p style="color: black;">Banane, orange, fraise</p>
+                        <p class="prix" style="color: black;">3000 fcfa</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="/css/boisson2.jpg">
+                    <div class="item-infos">
+                        <h3>Jus de pastèque</h3>
+                        <hr>
+                        <p style="color: black;">La pastèque du jardin</p>
+                        <p class="prix" style="color: black;">2500 fcfa</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="/css/boisson3.jpg">
+                    <div class="item-infos">
+                        <h3>Café</h3>
+                        <hr>
+                        <p style="color: black;">Nexpresso, café, ..</p>
+                        <p class="prix" style="color: black;">1500 fcfa</p>
+                    </div>
+                </div>
+
+            </section>
+
+
+        </main>
+
+
+        <!-- charge le script javascript -->
+        <script src="/js/code.js"></script>
+
+    
+{% endblock %}

@@ -1,0 +1,153 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MainController!{% endblock %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{{asset('/css/slid.css')}}" type=""/>
+{% endblock %}
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+{% for message in app.flashes('success') %}
+        <div class="alert alert-success" role="alert">{{ message }}</div>
+    {% endfor %}
+    <div id="slider">
+        <figure>
+          <img src="/css/athiekepoulet.jpg">
+          <img src="/css/burger1.jpg">
+          <img src="/css/riz.jpg">
+          <img src="/css/resistance.png">
+          <img src="/css/salpoulet.jpg">
+        </figure>
+      </div>
+
+  <br>
+  <div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card bg-light mb-3">
+          <img src="/css/pizza1.jpg" alt="image de l'appartement" style="height:200px; width: 100%; display: block">
+          <div class="card-body">
+            <h4 class="card-title">Pizza</h4>
+            <p class="card-text" style="color: black;">
+              Reine, margarite....
+              <br>
+              prix: 3500fcfa
+            </p>
+        </div>
+      </div> 
+    </div>
+    <div class="col-md-4">
+      <div class="card bg-light mb-3">
+          <img src="/css/riz.jpg" alt="image de l'appartement" style="height:200px; width: 100%; display: block">
+          <div class="card-body">
+            <h4 class="card-title">riz aux poissons </h4>
+            <p class="card-text" style="color: black;">
+             Plat senegalais tres delicieux
+             <br>
+             prix: 1500cfa
+            </p>
+        </div>
+      </div> 
+    </div>
+    <div class="col-md-4">
+      <div class="card bg-light mb-3">
+          <img src="/css/burger1.jpg" alt="image de l'appartement" style="height:200px; width: 100%; display: block">
+          <div class="card-body">
+            <h4 class="card-title">Hambourger</h4>
+            <p class="card-text" style="color: black;">
+              Riche et regale vite
+              <br>
+              prix: 2000fcfa
+            </p>
+        </div>
+      </div> 
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card bg-light mb-3">
+          <img src="/css/resistance.png" alt="image de l'appartement" style="height:200px; width: 100%; display: block">
+          <div class="card-body">
+            <h4 class="card-title">Poulets frittes</h4>
+            <p class="card-text" style="color: black;">
+              plat de resistance 
+              <br>
+              prix: 3500fcfa
+            </p>
+        </div>
+      </div> 
+    </div>
+    <div class="col-md-4">
+      <div class="card bg-light mb-3">
+          <img src="/css/athiekecrev.jpg" alt="image de l'appartement" style="height:200px; width: 100%; display: block">
+          <div class="card-body">
+            <h4 class="card-title">riz crevettes </h4>
+            <p class="card-text" style="color: black;">
+             Sale et savoureux
+             <br>
+             prix: 2000cfa
+            </p>
+        </div>
+      </div> 
+    </div>
+    <div class="col-md-4">
+      <div class="card bg-light mb-3">
+          <img src="/css/athiekepoisson.jpg" alt="image de l'appartement" style="height:200px; width: 100%; display: block">
+          <div class="card-body">
+            <h4 class="card-title">Athiere aux poissons</h4>
+            <p class="card-text" style="color: black;">
+              Plein de vitamines
+              <br>
+              prix: 3000fcfa
+            </p>
+        </div>
+      </div> 
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card bg-light mb-3">
+          <img src="/css/athiekepoulet.jpg" alt="image de l'appartement" style="height:200px; width: 100%; display: block">
+          <div class="card-body">
+            <h4 class="card-title">Athieke aux poulets</h4>
+            <p class="card-text" style="color: black;">
+              Delicieux et savoureux
+              <br>
+              prix: 2500fcfa
+            </p>
+        </div>
+      </div> 
+    </div>
+    <div class="col-md-4">
+      <div class="card bg-light mb-3">
+          <img src="/css/firir.jpg" alt="image de l'appartement" style="height:200px; width: 100%; display: block">
+          <div class="card-body">
+            <h4 class="card-title">Firires</h4>
+            <p class="card-text" style="color: black;">
+              Fais a base de poissons et crudites
+              <br>
+              prix: 4000fcfa
+            </p>
+        </div>
+      </div> 
+    </div>
+    <div class="col-md-4">
+      <div class="card bg-light mb-3">
+          <img src="/css/salpoulet.jpg" alt="image de l'appartement" style="height:200px; width: 100%; display: block">
+          <div class="card-body">
+            <h4 class="card-title">Poulets et Salades</h4>
+            <p class="card-text" style="color: black;">
+              Gouter, c'est la bonne saveur
+              <br>
+              prix: 3500fcfa
+            </p>
+        </div>
+      </div> 
+    </div>
+  </div>
+  </div>
+{% endblock %}

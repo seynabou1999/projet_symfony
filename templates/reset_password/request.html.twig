@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Réinitialisation {% endblock %}
+{% block stylesheets %}
+<link href="{{ asset('/css/register.css') }}" type="text/css" rel="stylesheet" />
+{% endblock %}
+
+{% block body %}
+    {% for flashError in app.flashes('reset_password_error') %}
+        <div class="alert alert-danger" role="alert">{{ flashError }}</div>
+    {% endfor %}
+    
+    {# <h3>Réinitialisation de mot de passe</h3>
+
+    {{ form_start(requestForm) }}
+        {{ form_row(requestForm.email) }}
+        <br>
+        <div>
+            <small>
+                Entrez votre adresse e-mail et nous vous enverrons un
+                lien pour réinitialiser votre mot de passe.
+            </small>
+        </div>
+          <br>
+        <button class="btn btn--radius btn--green" type="submit">Valider</button>
+    {{ form_end(requestForm) }} #}
+
+    <div class="page-wrapper bg-red p-t-180 p-b-100 font-robo">
+        <div class="wrapper wrapper--w960">
+            <div class="card card-2">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <h2 class="title">Reinitialisation Mot de passe</h2>
+                    {{ form_start(requestForm) }}
+                    <div>
+                        {{ form_row(requestForm.email) }}
+                    </div>
+                    <br>
+                    <form method="POST">
+                        {# <div class="input-group">
+                            <input class="input--style-2" type="email" placeholder="Email" name="email">
+                        </div> #}
+                        <button class="btn btn--radius btn--green" type="submit">Valider</button>
+                        {{ form_end(requestForm) }}
+                           
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+{% endblock %}
